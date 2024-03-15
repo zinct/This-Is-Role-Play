@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqkvgdtcvvrt7"]
+
+[ext_resource type="PackedScene" uid="uid://dodvin05tnxuq" path="res://features/game/character/player/player.tscn" id="1_8ihyv"]
+[ext_resource type="PackedScene" uid="uid://prpu3knmx0lu" path="res://features/world/building/market/market.tscn" id="2_78nci"]
+
+[node name="Node" type="Node"]
+
+[node name="TileMap" parent="." instance=ExtResource("2_78nci")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_8ihyv")]
+position = Vector2(497, 252)
+scale = Vector2(4, 4)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-0.25, 0)
+scale = Vector2(0.25, 0.25)
+position_smoothing_enabled = true
+position_smoothing_speed = 3.0
