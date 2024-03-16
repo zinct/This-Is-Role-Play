@@ -7,11 +7,10 @@
 
 [node name="TileMap" parent="." instance=ExtResource("2_78nci")]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_8ihyv")]
-position = Vector2(497, 252)
-scale = Vector2(4, 4)
+[node name="Player" parent="TileMap" instance=ExtResource("1_8ihyv")]
+position = Vector2(153.75, 102.75)
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="TileMap/Player"]
 position = Vector2(-0.25, 0)
 scale = Vector2(0.25, 0.25)
 position_smoothing_enabled = true
